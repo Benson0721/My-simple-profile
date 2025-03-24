@@ -1,0 +1,113 @@
+html {
+    font-family: "Pixelify Sans", sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: bold;
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../assets/animation/frog.gif);
+        background-size: cover;
+        //change font-size without using media query ==> use "rem"?
+
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #222222e1;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #222222e1;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #222222e1;
+    }
+
+    figure {
+        margin: 0px;
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+}
+
+.profile-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba($color: white, $alpha: 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+    border: 2px solid rgba($color: white, $alpha: 0.2);
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+    .profile-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 0;
+
+        .profile-image {
+            margin: auto;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border: 2px solid rgba($color: white, $alpha: 0.2);
+                border-radius: 50%;
+            }
+        }
+
+        .profile-intro {
+            text-align: center;
+        }
+
+        .profile-nav {
+            width: 100%;
+
+            .nav-link {
+                background-color: rgba($color: white, $alpha: 0.3);
+                background: linear-gradient(to right bottom, white 25%, white 40%) 1;
+                border: 2px solid rgba($color: white, $alpha: 0.2);
+                text-align: center;
+                margin: 12px 24px;
+                padding: 12px;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: rgba($color: white, $alpha: 0.21);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:1440px) {
+    .profile-border {
+        max-width: 384px;
+    }
+
+}
